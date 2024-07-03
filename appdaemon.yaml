@@ -1,0 +1,19 @@
+---
+secrets: /homeassistant/secrets.yaml
+appdaemon:
+  latitude: 37
+  longitude: -122
+  elevation: 2
+  time_zone: America/Los_Angeles
+  ports: "5000:5000"
+  host: 192.168.10.52
+
+  plugins:
+    HASS:
+      type: hass
+      #token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI4ODA0NmY1YmIxN2U0MzUwOTdjYjFkZjNkMTQwN2U0NSIsImlhdCI6MTY5NTg1MjU0OSwiZXhwIjoyMDExMjEyNTQ5fQ.cOXsnWfByG0OWheixNHRkmyUmL8V0xcyreu9UFTm4bM
+http:
+  url: http://127.0.0.1:5050
+admin:
+api:
+hadashboard:

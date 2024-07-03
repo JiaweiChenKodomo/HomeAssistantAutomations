@@ -7,7 +7,6 @@
 !*.md
 
 # Ignore folders.
-.storage
 .cloud
 .google.token
 

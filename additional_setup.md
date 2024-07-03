@@ -1,6 +1,6 @@
 Add the following to configuration.yaml to read data from PLS and get data from presence sensor.
 
-'''
+```
 sensor:
   - platform: tcp
     name: HiL_sensor
@@ -34,4 +34,4 @@ binary_sensor:
           on
           {%- endif -%}
 
-'''
+```

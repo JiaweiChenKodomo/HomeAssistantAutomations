@@ -1,0 +1,1 @@
+This folder contains files on the Raspberry Pi Server of the PLS. The lines of code in /etc/rc.local should be added o the same file under the same directoy on the Raspberry Pi. The directories in the files (rc.local and start.sh) should be canged to the one matching your own user name.

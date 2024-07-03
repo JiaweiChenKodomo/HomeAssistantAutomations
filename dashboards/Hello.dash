@@ -1,0 +1,47 @@
+#
+# Main arguments, all optional
+#
+title: Hello Panel
+widget_dimensions: [120, 120]
+widget_margins: [5, 5]
+columns: 8
+
+
+
+label:
+    widget_type: label
+    text: Cubicle 1
+
+Daylight_Illuminance:
+    widget_type: sensor
+    title: Daylight Illuminance
+    units: "lx"
+    precision: 0.1
+    entity: sensor.my_tcp_sensor1
+
+LED1:
+    widget_type: light
+    title: LED Level
+    entity: light.0x001788010d7103db
+
+Automation_toggle:
+    widget_type: input_boolean
+    title: Automatically Control Light
+    entity: input_boolean.useautomation
+
+Illuminance_set_level:
+    widget_type: input_slider
+    title: Illuminance Set Level
+    entity: input_number.illuminance_set_level
+
+Flourescent_state:
+    widget_type: switch
+    title: Fluorescent Light State
+    entity: switch.0x54ef44100081977f
+
+    
+layout:
+    - label(2x1)
+    - Illuminance_set_level, LED1
+    - Daylight_Illuminance, Flourescent_state
+    - binary_sensor.presence_sensor_fp2_4a6e_presence_sensor_2, Automation_toggle

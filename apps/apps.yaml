@@ -1,0 +1,14 @@
+---
+hello_world:
+  module: hello
+  class: HelloWorld
+
+# test_energy:
+#   module: test_energy
+#   class: TestEnergy
+
+# test_illum:
+#   module: test_illum
+#   class: TestIllum
+
+hadashboard:

@@ -6,10 +6,6 @@
 !.gitignore
 !*.md
 
-# Ignore folders.
-.cloud
-.google.token
-
 # Ensure these YAML files are ignored, otherwise your secret data/credentials will leak.
 ip_bans.yaml
 secrets.yaml
